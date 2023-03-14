@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PairdDevice">
+
+    <LinearLayout
+        android:id="@+id/linear_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="16dp"
+        android:layout_marginTop="40dp">
+
+        <Button
+            android:id="@+id/paired_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Paired Devices"
+            />
+        <Button
+            android:id="@+id/scan_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/purple_200"
+            android:text="Scan Act"
+            android:layout_marginLeft="50dp"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/paired_Devices_List"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/linear_lay"/>
+
+</RelativeLayout>
